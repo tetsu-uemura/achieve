@@ -16,12 +16,13 @@
                )
 end
 
-n = 1
-while n <= 100
+
+100.times do |n|
+  @f = User.where('id >= ?', rand(User.first.id..User.last.id)).first
   Blog.create!(
     title: "あああ",
     content:"あああ",
-    user_id: n
+    user_name:@f.name,
+    user_id:@f.id
   )
-  n = n + 1
 end
