@@ -1,7 +1,22 @@
 Rails.application.routes.draw do
+  resources :blogs, only: [:index, :new, :create, :edit, :update ,:destroy] do
+    collection do
+      post :confirm
+    end
+  end
+  get 'blogs' => 'blogs#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
+  root 'top#index'
 
+
+  resources :contacts, only: [:new, :create] do
+    collection do
+      post :confirm
+    end
+  end
+
+  get 'contacts' => 'contacts#new'
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
