@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 20160829122259) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer  "user_id"
-    t.integer  "user_name"
+    t.string   "user_name"
   end
 
   create_table "contacts", force: :cascade do |t|
