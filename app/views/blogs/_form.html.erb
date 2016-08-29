@@ -10,7 +10,11 @@
       </ul>
     </div>
   <% end %>
-
+  <%= f.label :user_id %>
+  <%= f.hidden_field :user_id, class: 'form-control' %>
+  <%= f.label :username %>
+  <%= f.hidden_field :username, class: 'form-control' %>
+  <br>
   <%= f.label :title %>
   <%= f.text_field :title, class: 'form-control' %>
   <br>
