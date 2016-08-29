@@ -5,6 +5,8 @@ class ApplicationController < ActionController::Base
 
   before_action :configure_permitted_parameters, if: :devise_controller?
 
+  PERMISSIBLE_ATTRIBUTES = %i(name)
+
   protected
 
     def configure_permitted_parameters
