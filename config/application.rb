@@ -21,7 +21,7 @@ module Achieve
     # config.i18n.default_locale = :de
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
-    config.active_record.raise_in_transactional_callbacks = true
+    #config.active_record.raise_in_transactional_callbacks = true
 
     #config.action_view.field_error_proc = proc { |html_tag, instance| html_tag }
   end
