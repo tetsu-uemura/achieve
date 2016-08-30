@@ -28,6 +28,10 @@ gem 'faker'
 gem 'faker-japanese'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+gem 'therubyracer', platforms: :ruby
+gem 'rails_admin'
+
+gem 'cancan'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
