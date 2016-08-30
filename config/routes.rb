@@ -19,6 +19,11 @@ Rails.application.routes.draw do
   end
 
   get 'contacts' => 'contacts#new'
+
+  if Rails.env.development?
+    mount LetterOpenerWeb::Engine, at: "/letter_opener"
+  end
+
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
