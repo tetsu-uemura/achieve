@@ -3,7 +3,6 @@
     <p id="notice"><%= notice %>
     <%= form_for(@contact, url: confirm_contacts_path) do |f| %>
       <%= f.error_messages! %>
-      <% end %>
       <%= f.label :name %>
       <%= f.text_field :name, class: 'form-control' %>
       <%= f.label :email %>
