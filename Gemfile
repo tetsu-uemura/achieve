@@ -33,6 +33,13 @@ gem 'rails_admin'
 
 gem 'cancan'
 
+gem 'omniauth'
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
+
+gem 'carrierwave'
+gem 'rmagick'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
@@ -55,6 +62,8 @@ group :development, :test do
 
   gem 'pry-rails'
   gem 'better_errors'
+
+  gem 'dotenv-rails'
 end
 
 gem 'twitter-bootstrap-rails'
